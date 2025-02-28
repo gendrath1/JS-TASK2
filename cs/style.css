@@ -1,0 +1,103 @@
+.container {
+    width:70% ;
+    margin: auto;
+}
+.row {
+    display: flex;
+    
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.user {
+    width: 25%;
+    background-color: rgb(59, 64, 102);
+    padding: 15px;
+    box-shadow: 1px 1px 3px 3px rgba(0,0,0,0.3);   
+}
+.user h3 {
+    color: white;
+    text-align: center;
+}
+.user p ,.user address{
+    color: lightslategrey;
+
+    text-align: center;
+}
+.main  {
+    margin-top: 30px;
+}
+.header {
+    display: flex;
+    padding: 30px;
+    justify-content: space-around;
+   position: sticky;
+   top: 0;
+    align-items: center;
+    background: white;
+    box-shadow: 1px 1px 3px 3px rgba(0,0,0,0.3);  
+}
+.header nav {
+    display: flex;
+    gap: 30px;
+}
+.header nav a {
+    text-decoration: none;
+   font-weight: bold;
+   color: rgb(59, 64, 102);
+}
+.header nav a:hover {
+color: black;
+}
+.header .search-bar button {
+border: none;
+background-color:rgb(59, 64, 102);
+    color: white;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+.header .search-bar input {
+    padding: 9px 15px;
+}
+.header .search-bar button:hover {
+    background-color: black;
+}
+.bars {
+    display: none;
+}
+
+@media (max-width: 750px) {
+    .header .search-bar {
+        display: none;
+    }
+    
+}
+@media (max-width: 417px) {
+    .header nav {
+        display: none;
+
+    }
+    .header {
+        justify-content: flex-end;
+    }
+    .bars {
+        display: block;
+    }
+}
+@media (max-width:1047px) {
+
+    .container {
+        width: 90%;
+    }
+   
+}
+@media (max-width:820px) {
+    .user {
+    width: 40%;;
+    }
+}
+@media (max-width:466px) {
+    .user {
+    width: 80%;
+    margin: auto;
+    }
+}
